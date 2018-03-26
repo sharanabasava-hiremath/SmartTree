@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    tools:context="cmpe235.smarttree.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/pic24"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- photo button -->
+        <Button
+            android:id="@+id/btnCapturePicture"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/share"
+            android:layout_alignBottom="@+id/share"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/share"
+            android:layout_toRightOf="@+id/share"
+            android:background="@drawable/mybutton"
+            android:text="Capture a Photo"
+            android:textColor="#ffffff" />
+
+        <!-- video button -->
+
+        <Button
+            android:id="@+id/btnRecordVideo"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/sharevideo"
+            android:layout_alignBottom="@+id/sharevideo"
+            android:layout_alignLeft="@+id/btnCapturePicture"
+            android:layout_alignStart="@+id/btnCapturePicture"
+            android:background="@drawable/mybutton"
+            android:text="Capture a Video"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sharevideo"
+            android:layout_alignStart="@+id/sharevideo"
+            android:layout_below="@+id/btnRecordVideo"
+            android:background="@drawable/mybutton"
+            android:text="Share Photo"
+            android:textColor="#ffffff" />
+
+
+        <Button
+            android:id="@+id/sharevideo"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="37dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="59dp"
+            android:background="@drawable/mybutton"
+            android:text="Share Video"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnCapturePicture"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/btnCapturePicture"
+            android:background="@drawable/mybutton"
+            android:text="Back"
+            android:textColor="#ffffff" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

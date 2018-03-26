@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic22"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/Nearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:text="Nearby"
+        android:layout_above="@+id/Comment"
+        android:layout_alignLeft="@+id/Comment"
+        android:layout_alignStart="@+id/Comment" />
+
+    <Button
+        android:id="@+id/About"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Interact"
+        android:layout_alignLeft="@+id/Interact"
+        android:layout_alignStart="@+id/Interact"
+        android:background="@drawable/mybutton"
+        android:text="About"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/Interact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:text="Interact"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_alignBaseline="@+id/photo_video"
+        android:layout_alignBottom="@+id/photo_video"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/photo_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:text="Photo/Video"
+        android:layout_alignBaseline="@+id/Comment"
+        android:layout_alignBottom="@+id/Comment"
+        android:layout_toRightOf="@+id/Interact"
+        android:layout_toEndOf="@+id/Interact"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+    <Button
+        android:id="@+id/Comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:text="Comment"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/photo_video"
+        android:layout_toEndOf="@+id/photo_video"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Nearby"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Nearby"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:text="logout" />
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Comment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Comment"
+        android:background="@drawable/mybutton"
+        android:text="EXIT"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

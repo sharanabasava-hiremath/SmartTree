@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic24"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Record Audio"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_record"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/mybutton"
+        android:onClick="recordAudio"
+        android:text="Record"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button_stop"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/mybutton"
+        android:onClick="stopAudio"
+        android:text="Stop"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/button_play"
+        android:layout_alignLeft="@+id/button_play"
+        android:layout_alignStart="@+id/button_play" />
+
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/mybutton"
+        android:onClick="playAudio"
+        android:text="Start"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/button_record"
+        android:layout_alignBottom="@+id/button_record"
+        android:layout_toRightOf="@+id/button_record"
+        android:layout_toEndOf="@+id/button_record"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        android:id="@+id/button_share_audio"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.02"
+        android:background="@drawable/mybutton"
+        android:onClick="shareAudio"
+        android:text="Share Audio"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/button_stop"
+        android:layout_alignBottom="@+id/button_stop"
+        android:layout_alignLeft="@+id/button_record"
+        android:layout_alignStart="@+id/button_record" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/mybutton"
+        android:text="Back"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<FrameLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context="cmpe235.smarttree.MapsActivity"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <Button
+
+            android:id="@+id/btnRestaurant"
+
+            style="@style/Widget.AppCompat.Button"
+
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:text="Nearby Restaurants"
+            android:textColor="#ffffff" />
+
+        <Button
+
+            android:id="@+id/btnSchool"
+
+            style="@style/Widget.AppCompat.Button"
+
+            android:layout_width="140dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/mybutton"
+            android:text="Nearby Schools"
+            android:textColor="#ffffff" />
+
+        <Button
+
+            android:id="@+id/btnHospital"
+
+            style="@style/Widget.AppCompat.Button"
+
+            android:layout_width="140dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="14dp"
+            android:background="@drawable/mybutton"
+            android:text="Nearby Hospitals"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/mybutton"
+            android:text="Back"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</FrameLayout
+>
